@@ -35,6 +35,8 @@ namespace Command.RealWorld
     /// <summary>
     /// La Clase 'ConcreteCommand'
     /// </summary>
+    /// Y una clase de comando "CalculatorCommand" que es una clase concreta que
+    /// implementa un comando para realizar una operación en la calculadora.
     public class CalculatorCommand : Command
     {
         char @operator;
@@ -86,6 +88,8 @@ namespace Command.RealWorld
     /// <summary>
     /// La clase 'Receiver'
     /// </summary>
+    /// También se utiliza una clase "Calculator" como receptor que
+    /// realiza las operaciones aritméticas.
     public class Calculator
     {
         int curr = 0;
@@ -106,6 +110,10 @@ namespace Command.RealWorld
     /// <summary>
     /// La clase 'Invoker'
     /// </summary>
+    /// Se tiene una clase de usuario llamada User que tiene una calculadora
+    /// y una lista de comandos. El usuario puede realizar operaciones aritméticas
+    /// básicas en la calculadora mediante la ejecución de comandos, y también puede
+    /// deshacer y rehacer comandos.
     public class User
     {
         // Inicializadores
